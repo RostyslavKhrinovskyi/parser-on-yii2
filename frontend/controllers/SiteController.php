@@ -34,7 +34,6 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        
         $dataHistory = History::find()
                             ->orderBy('date DESC')
                             ->limit(15)

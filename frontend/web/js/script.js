@@ -11,4 +11,4 @@ function getAjaxDataHistory()
     });
 }
 
-//setInterval("getAjaxDataHistory()", 3000);
+setInterval("getAjaxDataHistory()", 4000);
