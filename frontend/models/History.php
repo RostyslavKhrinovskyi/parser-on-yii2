@@ -86,45 +86,4 @@ class History extends \yii\db\ActiveRecord
         }
     }
 
-    /**
-     * return html with data
-     * @param $data
-     * @return string
-     */
-    public static function formatDataToHTML($data)
-    {
-        $html = '<table class="table">
-        <thead>
-            <th>Score</th>
-            <th>Team</th>
-            <th>home</th>
-            <th>draw</th>
-            <th>away</th>
-        </thead>
-        <tbody>';
-
-         foreach($data as $item) {
-           $html .=  '<tr>
-                    <td>
-                        ' . $item['score'] . '
-                    </td>
-                    <td>
-                        ' . $item['team'] . '
-                    </td>
-                    <td>
-                        ' . $item['home'] . '
-                    </td>
-                    <td>
-                        ' . $item['draw'] . '
-                    </td>
-                    <td>
-                        ' . $item['away'] . '
-                    </td>
-                </tr>';
-         }
-
-        $html .= '</tbody></table>';
-
-        return $html;
-    }
 }

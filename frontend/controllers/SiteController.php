@@ -63,7 +63,11 @@ class SiteController extends Controller
                     ->all();
             }
 
-            echo json_encode(History::formatDataToHTML($dataHistory));
+            echo $this->renderPartial('table' , [
+                'dataHistory' => $dataHistory
+            ]);
+
+            exit();
 
         }
     }

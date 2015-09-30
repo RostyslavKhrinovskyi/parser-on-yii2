@@ -4,7 +4,7 @@ function getAjaxDataHistory()
     $.ajax({
         type: "POST",
         url: "site/data-history",
-        dataType: "json",
+        dataType: "html",
         success: function(msg){
             $('.bodyParser').html(msg);
         }
