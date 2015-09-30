@@ -82,7 +82,7 @@ class History extends \yii\db\ActiveRecord
 
         } catch (Exception $e){
             echo $e->getMessage();
-            return false;
+            return null;
         }
     }
 
