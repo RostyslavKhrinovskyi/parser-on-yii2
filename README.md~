@@ -1,6 +1,16 @@
-Yii 2 Parser
+Install packages composer
 ===============================
 
-Database file - parser.sql
+composer install -o
+
+Database path
+===============================
+
+/common/settings/main.php
+
+Migrations
+===============================
+
+php yii migrate
 
 
